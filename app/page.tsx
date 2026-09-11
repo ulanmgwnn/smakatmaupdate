@@ -1,7 +1,6 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import {
   Code,
   Database,
@@ -35,7 +34,7 @@ export default function Home() {
             height={50}
             className="rounded-xl sm:w-[60px] sm:h-[60px]"
           />
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent font-parkinsans">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 bg-clip-text text-transparent font-inter">
             Codeguide Starter Fullstack
           </h1>
         </div>
