@@ -1,0 +1,507 @@
+<!DOCTYPE html><html lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-bright": "#f8f9ff",
+        "tertiary-fixed-dim": "#b6c4ff",
+        "primary": "#00030a",
+        "inverse-primary": "#b6c7e9",
+        "on-primary-container": "#7586a5",
+        "on-surface": "#121c2a",
+        "secondary": "#7f5600",
+        "on-primary-fixed-variant": "#364763",
+        "error": "#ba1a1a",
+        "surface-variant": "#d9e3f6",
+        "secondary-fixed-dim": "#ffba40",
+        "surface-container-lowest": "#ffffff",
+        "surface": "#f8f9ff",
+        "primary-fixed": "#d6e3ff",
+        "background": "#f8f9ff",
+        "surface-container": "#e6eeff",
+        "secondary-container": "#ffb215",
+        "inverse-on-surface": "#eaf1ff",
+        "primary-container": "#0a1d37",
+        "tertiary": "#000211",
+        "surface-container-low": "#eff4ff",
+        "on-secondary-container": "#6b4800",
+        "on-tertiary-container": "#6981d4",
+        "on-secondary-fixed": "#281800",
+        "primary-fixed-dim": "#b6c7e9",
+        "on-surface-variant": "#44474d",
+        "on-secondary": "#ffffff",
+        "on-primary": "#ffffff",
+        "secondary-fixed": "#ffddae",
+        "on-error-container": "#93000a",
+        "tertiary-fixed": "#dce1ff",
+        "surface-dim": "#d0dbed",
+        "surface-tint": "#4e5f7c",
+        "tertiary-container": "#001752",
+        "on-tertiary-fixed": "#00164e",
+        "outline-variant": "#c5c6ce",
+        "outline": "#75777e",
+        "on-background": "#121c2a",
+        "on-primary-fixed": "#081c36",
+        "on-tertiary": "#ffffff",
+        "on-secondary-fixed-variant": "#604000",
+        "surface-container-highest": "#d9e3f6",
+        "on-error": "#ffffff",
+        "error-container": "#ffdad6",
+        "on-tertiary-fixed-variant": "#264191",
+        "surface-container-high": "#dee9fc",
+        "inverse-surface": "#27313f"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-xl": "2rem",
+        "gutter-tablet": "1.5rem",
+        "space-2xl": "3rem",
+        "gutter-mobile": "1rem",
+        "space-3xl": "4.5rem",
+        "space-md": "1rem",
+        "container-max": "1280px",
+        "space-xs": "0.5rem",
+        "gutter-desktop": "2rem",
+        "space-lg": "1.5rem",
+        "space-sm": "0.75rem",
+        "space-4xl": "6rem",
+        "space-2xs": "0.25rem"
+      },
+      "fontFamily": {
+        "display-hero-mobile": ["Playfair Display"],
+        "headline-lg-mobile": ["Playfair Display"],
+        "headline-sm": ["Playfair Display"],
+        "body-sm": ["Inter"],
+        "display-hero": ["Playfair Display"],
+        "stat-number": ["Playfair Display"],
+        "headline-lg": ["Playfair Display"],
+        "headline-md": ["Playfair Display"],
+        "label-eyebrow": ["Inter"],
+        "body-md": ["Inter"],
+        "body-lg": ["Inter"],
+        "label-md": ["Inter"]
+      },
+      "fontSize": {
+        "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "stat-number": ["32px", {"lineHeight": "36px", "fontWeight": "700"}],
+        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+        "label-eyebrow": ["12px", {"lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700"}],
+        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="bg-primary-container text-on-primary py-space-2xs px-gutter-mobile lg:px-gutter-desktop"><div class="max-w-container-max mx-auto flex flex-wrap justify-between items-center font-body-sm text-body-sm"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-space-2xs text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">location_on</span><span class="">Makale, Tana Toraja</span></div><div class="hidden sm:flex items-center gap-space-2xs text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">call</span><span class="">+62 542 860895 / (0423) 22123</span></div></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-2xs text-surface-container-high hover:text-secondary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">school</span><span class="">Portal Siswa</span></a><a class="flex items-center gap-space-2xs text-surface-container-high hover:text-secondary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">workspace_premium</span><span class="">Portal Alumni</span></a></div></div></div><div class="bg-surface-container-lowest/95 backdrop-blur-md"><div class="h-20 max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between"><a class="flex items-center gap-space-sm group text-left" data-path="beranda" href="#"><div class="w-11 h-11 rounded-lg overflow-hidden flex items-center justify-center shrink-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEmTcwAGJA-_ATFXyj8jI2gqSA1htLlAz9PdGG29aO378JtDPKXFB-74-L5L00x7QqpIktxA3ZPD-6eJVFfZJy-Ywi_kOXr4Wm-VUqDL2L_qwZPJk1D3j9Oyj_B96xGLACLOFPwC5hqiHmN4F7hd-TkJPfzVNalwhIvhPjyhjXhYNZ29TU5f5XjJliFqlbnrD3tKDt8T5B7IecUMOLUuAdhC7Gmym70JbG5YkMeFZlKFsL7yKuM8ULEo8vTxzfVtkXXpA" alt="Logo SMAS Katolik Makale" class="w-full h-full object-contain"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container leading-none tracking-tight">SMAS KATOLIK MAKALE</span><span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase mt-0.5 tracking-widest">FIDES, SCIENTIA, HUMANIORA</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8"><a aria-current="page" class="transition-colors py-2 text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8" data-path="beranda" href="#">Beranda</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="profil-&amp;-sejarah-sekolah" href="#">Profil</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="akademik-&amp;-kesiswaan" href="#">Akademik</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="akademik-&amp;-kesiswaan" href="#">Kesiswaan</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="berita-&amp;-acara" href="#">Berita</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="ppdb-(admissions)" href="#">PPDB</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim rounded-xl font-label-md text-label-md shadow-[0_4px_12px_rgba(244,169,0,0.25)] transition-all gap-space-2xs" data-path="ppdb-(admissions)" href="#"><span class="">DAFTAR PPDB</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO (SPLIT LAYOUT) -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-xl lg:pt-space-3xl pb-space-3xl lg:pb-space-4xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+<!-- Left Content -->
+<div class="lg:col-span-6 flex flex-col items-start z-10">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-secondary-fixed/50 mb-space-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-variant tracking-wider uppercase">Sekolah Menengah Atas Terakreditasi Unggul</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-primary-container leading-[1.12] mb-space-md">
+            Membentuk <span class="text-secondary underline decoration-secondary-container decoration-wavy underline-offset-8">Karakter</span>, Menginspirasi Masa Depan.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-xl leading-relaxed">
+            SMAS Katolik Makale memadukan integritas iman, kemajuan sains modern, dan keluhuran budaya luhur Tana Toraja untuk mencetak generasi cendekia yang berdaya saing global.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-space-2xs px-space-lg py-space-sm bg-primary-container text-on-primary rounded-xl font-label-md text-label-md shadow-md hover:bg-primary transition-all group" data-path="profil-&amp;-sejarah-sekolah" href="#">
+<span class="">Jelajahi Sekolah</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<button class="inline-flex items-center gap-space-2xs px-space-lg py-space-sm bg-surface-container text-primary-container rounded-xl font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="const modal = document.getElementById('videoModal'); modal.classList.remove('hidden'); modal.classList.add('flex');" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">play_circle</span>
+<span class="">Lihat Profil Video</span>
+</button>
+</div>
+<!-- Micro Academic Trust Indicator -->
+<div class="flex items-center gap-space-lg mt-space-2xl pt-space-md border-t border-surface-container">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed-dim flex items-center justify-center font-label-md text-label-md shadow-sm">KM</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-md text-label-md shadow-sm">ST</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary-container flex items-center justify-center font-label-md text-label-md shadow-sm">TR</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary-container">65+ Tahun Tradisi Pengajaran</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sejak 1958 di Bumi Lakipadada, Toraja</span>
+</div>
+</div>
+</div>
+<!-- Right Visual & Floating Overlap Badge -->
+<div class="lg:col-span-6 relative">
+<!-- Background ambient subtle circle -->
+<div class="absolute -top-12 -right-12 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-72 h-72 bg-primary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-low">
+<img class="w-full h-[460px] lg:h-[520px] object-cover object-center" data-alt="Group of confident Indonesian high school students in navy blue blazers with gold school crests smiling warmly in an elegant academic library setting surrounded by books and soft sunlit Toraja pine tree view outside windows, photorealistic, educational prestige aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAgfkH096qvZkrw3gHimQ8hsTG5c333JSYLPRPpgrvU0GoFP0A1iFLO7bOjqWMqumQKy0DUEiVTC8p5J9eMA_2wj8rgLJ0fUY3WsX09jA5HEheJsJZM05t_d0tV8E5FGSUvf9zaWzXx88KC6XF1GyhDsobNp4CBt-zccteb24W1OL_6G1bhJ11BHqpTsmYP71vpgU7O1PkxEfVIcyZA969JidheE7V1uq3aWs1j0hq5PQ0653DfHZP3IEFMKeQUoHwqWRLwdmuprObMo0">
+<!-- Soft gradient scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/60 via-transparent to-transparent"></div>
+</div>
+<!-- Floating Medallion Badge (Overlap) -->
+<div class="absolute -bottom-6 -right-2 sm:right-6 bg-surface-container-lowest text-on-surface p-space-md sm:p-space-lg rounded-xl shadow-xl max-w-[280px] sm:max-w-[320px] z-20 flex items-center gap-space-md transform hover:-translate-y-1 transition-all">
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-2xs text-secondary mb-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="material-symbols-outlined text-[14px]">star</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary-container leading-tight">Akreditasi A</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">BAN-S/M Unggul Nasional</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: OVERLAPPING STRUCTURAL METRIC STRIP -->
+<section class="relative w-full z-30 -mt-6 lg:-mt-10 px-gutter-mobile lg:px-gutter-desktop">
+<div class="max-w-container-max mx-auto bg-primary-container rounded-2xl shadow-xl overflow-hidden text-on-primary">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-on-primary-container/20">
+<!-- Pillar 1 -->
+<div class="p-space-lg sm:p-space-xl flex flex-col gap-space-xs hover:bg-surface-container-highest/10 transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">church</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-on-primary-container/80 tracking-widest uppercase">Pilar I</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mt-space-2xs">Fides (Iman)</h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Formasi spiritual dan pondasi moral Kristiani yang teguh dalam setiap hembusan karya dan budi pekerti.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg sm:p-space-xl flex flex-col gap-space-xs hover:bg-surface-container-highest/10 transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-on-primary-container/80 tracking-widest uppercase">Pilar II</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mt-space-2xs">Scientia (Ilmu)</h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Kurikulum Merdeka terintegrasi, pemikiran analitis kritis, serta penguasaan sains berstandar global.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg sm:p-space-xl flex flex-col gap-space-xs hover:bg-surface-container-highest/10 transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">diversity_3</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-on-primary-container/80 tracking-widest uppercase">Pilar III</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mt-space-2xs">Humaniora</h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Kepedulian sosial tulus, empati antarsesama, serta pemeliharaan kearifan adat seni budaya Toraja.</p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-lg sm:p-space-xl flex flex-col gap-space-xs hover:bg-surface-container-highest/10 transition-colors">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/20 text-secondary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">health_and_safety</span>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-on-primary-container/80 tracking-widest uppercase">Pilar IV</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mt-space-2xs">Lingkungan Aman</h3>
+<p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Kampus asri pegunungan, kedisiplinan berkarakter, zero-tolerance perundungan, dan ramah talenta.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ABOUT PREVIEW (EXCELLENCE SHOWCASE) -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface">
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+<!-- Left: Editorial Text -->
+<div class="lg:col-span-4 flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest mb-space-2xs">TENTANG SEKOLAH</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-space-md leading-tight">
+            Pendidikan Berkualitas untuk Karakter Seumur Hidup
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+            Sejak didirikan di Makale, SMAS Katolik Makale telah membina ribuan pemuda-pemudi dengan integritas moral tinggi, ketajaman intelektual, dan kesiapan berkiprah di perguruan tinggi ternama negeri maupun swasta di seantero nusantara.
+          </p>
+<div>
+<a class="inline-flex items-center gap-space-2xs px-space-lg py-space-sm bg-primary-container text-on-primary rounded-xl font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" data-path="profil-&amp;-sejarah-sekolah" href="#">
+<span class="">Selengkapnya Profil Kami</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Center: Campus Architecture / Laboratory Photo -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img class="w-full h-[380px] lg:h-[440px] object-cover" data-alt="Modern high school building of Catholic High School Makale in Tana Toraja with clean architectural facade, lush mountain greeneries in background, blue sky, modern glass science windows, highly polished academic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC37JHtjRI9O4rB88EBnmn-c5zWGAi0A0GxguH1JG99klKt6oAkFCFl9cv5W57W_U0AtWu9kDJkgaBn_K0vvl9a0Fz6Ibc94lMg50RHznEy6DS7Q5VTspJKLlGGwtNO_GQ0hZxsoT-87VxPuTFKFdAGJOQRipPnk1LRBzlcEVfFu2X-cIxejIyJM_vPdQLM7yjuP8uBBYyF-naMzIr9633Dlgwk9iSMCjLSJW3d36zmk2UKatpXTAlr8P61PCOgHblBVvo1v4IIE2lbapo">
+</div>
+<!-- Toraja heritage decorative tag -->
+<div class="absolute top-4 left-4 bg-primary-container/90 backdrop-blur-sm text-on-primary px-space-sm py-space-2xs rounded-lg text-body-sm font-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim">domain</span>
+<span class="">Kampus Pusat Makale</span>
+</div>
+</div>
+<!-- Right: 3 Vertical Stat Cards -->
+<div class="lg:col-span-3 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md hover:-translate-y-1 transition-transform flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<div>
+<div class="font-stat-number text-stat-number text-primary-container">90%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-label-md mt-0.5">Lulusan ke PTN Unggul &amp; Kedinasan</p>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md hover:-translate-y-1 transition-transform flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<div>
+<div class="font-stat-number text-stat-number text-primary-container">10+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-label-md mt-0.5">Ekstrakurikuler, Seni &amp; Klub Minat</p>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md hover:-translate-y-1 transition-transform flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed-dim flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">emoji_events</span>
+</div>
+<div>
+<div class="font-stat-number text-stat-number text-primary-container">120+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-label-md mt-0.5">Prestasi Akademik &amp; Sains Tingkat Nasional</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: ACADEMICS & EXTRACURRICULAR (BENTO / 4-COL CARDS) -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">AKADEMIK &amp; PENGEMBANGAN DIRI</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mt-space-2xs mb-space-xs">
+          Program Unggulan &amp; Ekstrakurikuler
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pilihan peminatan holistik yang dirancang untuk mengasah potensi intelektual, jiwa kepemimpinan, dan talenta artistik setiap siswa.
+        </p>
+</div>
+<!-- 4 Program Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-2xl">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group hover:-translate-y-1.5 transition-all">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Indonesian high school student wearing lab coat and safety goggles observing chemical reaction in science laboratory test tubes, clean modern Catholic school STEM facility in Makale Toraja" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXS1Bqy5WDhq_OvdmVSyhSwam4Rt1s9ZyNfIUfhzMYVwveRz4B4fLhQRe7MiJrHZdzj4jHnx1ivzH2naJSin-UEJZqCEN0P0DqV_r9ybt5A7JBk9dZqXL1Gl4Q_JkPyBX_6nmmOzwsY95AcHcRDbXTtu27GWss4r5DC7Pp8LWQvxIGwT1htsUx5eHBjGu5D7b5yWcUutVjEUYrv_jMMlxogGof-3uX7X11ApCeCJxiSEM3JW7XhDUBCg3VFVZxwiwXiBJP4amb-TVMQ50">
+<div class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-primary-container text-secondary-fixed-dim font-label-eyebrow text-label-eyebrow uppercase tracking-wider">sains</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Laboratorium&nbsp;</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Pembinaan intensif bidang Fisika, Biologi, Kimia, Astronomi, serta riset ilmiah remaja bertaraf OSN.
+              </p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">Kelas X - XII</span>
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group hover:-translate-y-1.5 transition-all">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High school student choir practicing harmonic choral singing with choir folders in a bright chapel hall, singing with joy, wearing Torajan ethnic sash accents, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbouDeXdOptGQ5cvlPeDHQs0CTe32rkWGROWbI4Qpa6pbQZ7FBXvwvV0SfpOik5QNm6aGg3V5OF8LUea6mGYSVD8p0ev7oayvHwC8AAw-HTC3R9r1lLAma6AE48AYW3s84rnLOsg3YTHqsgsFK8s5YuNJiz0N8XIzZt1OeUgsfj9v3_WHJXP2bIM_bilY0AsKSZHtQVeIB-c7oOP324SufKZZ_ZDS1lLyxvGFZhiN81Q573ejqo1dcKuizL79eBqGVh8zCF3bW4z0hCxQ">
+<div class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-primary-container text-secondary-fixed-dim font-label-eyebrow text-label-eyebrow uppercase tracking-wider">
+              Seni &amp; Budaya
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Falsetto Choir (Paduan Suara)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Paduan suara legendaris sekolah (Falsetto Choir).</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">Semua Angkatan</span>
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group hover:-translate-y-1.5 transition-all">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern computer lab in Catholic high school with smiling students coding and designing on desktop computers, high-tech classroom setting, focused collaborative learning atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpUBh7emTTwiAaPBoZ6gZrLZoobjHm_LiFYsThfVO9zFRnOkEP99RnIguSOj7TZMxEJEH6oZMQ-TzcZnPdqgANMT5clXGhtZZyzilAIgEeKbmgI2DVxOZZGgLvEzRXM7O5rrH_uoo5Xj5SOu7gus0qjLW6_bemg5mxEgJBl3YxmxFXEF8AnrfbgkJrefMckCSd7pXWFV6ZzKZMH8pVaFFMvYRtecAKtoVRYy63pzkwz8k0AIJZwuQ-3FMlYraAd3RMX9xGSeGhtqSY9Vk">
+<div class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-primary-container text-secondary-fixed-dim font-label-eyebrow text-label-eyebrow uppercase tracking-wider">Marching band</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Marching Band</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md"><b data-path-to-node="9,1,0,0" data-index-in-node="0">Event Internasional/Nasional:</b> Tampil memukau dalam festival budaya <b data-path-to-node="9,1,0,0" data-index-in-node="67">Magical Toraja 2022</b>.</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">Fasilitas Lengkap</span>
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col group hover:-translate-y-1.5 transition-all">
+<div class="relative h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High school sports team celebrating basketball victory on outdoor court with mountain scenery background in Makale Tana Toraja, energetic and athletic students in sportswear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwWa6I2h8sIQwDXUJniqxylfcXdQeZmjgZ58OhiQX_IBBC3WKJOj7pnBLgZ-XOxBwDtMB17XumWvzeX12_KrePlHOnMp6FBSkE8vSjVxFe5D2sY8bSlP3f1iwO0lseDnyC-W8QsMuEIAIVYzvVU4_GKcGfRkVbzIS5natxRfA8yE3or9eW5echUJ_dLAg9Z6aFvZ96asqy9NyXPy2nw0jAmmEIUU6BqjCRsOG9MbY5WTqAxqsw-a1W8lq-OflW-caOcCkUVYloH4yAO2A">
+<div class="absolute top-3 left-3 px-space-xs py-space-2xs rounded bg-primary-container text-secondary-fixed-dim font-label-eyebrow text-label-eyebrow uppercase tracking-wider">
+              Kepemimpinan
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">OSIS, Pramuka, Tari &amp; Olahraga.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+                Wadah pembentukan ketangguhan mental, kepemimpinan demokratis, basket Katma, futsal, dan kepramukaan aktif.
+              </p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-bold">Cabang Olahraga</span>
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Button Centered -->
+<div class="flex justify-center">
+<a class="inline-flex items-center gap-space-2xs px-space-xl py-space-sm bg-primary-container text-on-primary rounded-xl font-label-md text-label-md hover:bg-primary shadow-md transition-all" data-path="akademik-&amp;-kesiswaan" href="#">
+<span class="">Lihat Semua Program Kurikulum</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: ADMISSIONS CTA WITH DECORATIVE MOTIF -->
+<section class="w-full py-space-3xl lg:py-space-4xl bg-surface-container-lowest relative overflow-hidden">
+<!-- Subtle SVG decorative pattern in background -->
+<div class="absolute right-0 top-0 w-96 h-96 opacity-5 pointer-events-none text-primary-container">
+<svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 200 200">
+<circle cx="100" cy="100" r="80" stroke-dasharray="4 4"></circle>
+<polygon points="100,20 180,180 20,180"></polygon>
+<circle cx="100" cy="100" r="40"></circle>
+</svg>
+</div>
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl items-center">
+<!-- Left Image: Student Collaboration -->
+<div class="lg:col-span-6 order-2 lg:order-1">
+<div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-container">
+<img class="w-full h-[360px] lg:h-[420px] object-cover" data-alt="Two Indonesian high school students, boy and girl in formal navy blue school blazer, happily discussing an academic textbook under outdoor school veranda with Torajan wood carving ornament details in background, warm natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKfIp6iMf7ZBEn8O-InkMKsaNILIVHSUCtmaS62jbF6T4HJ50QTZVqqqOh1isLOuh2K2UWG38GehTRMnqldp1soCZvrOhmJcRd6qCSeUOubw96IHlhdLDircXDstcifkgKNpFidwXoLA7KA4aGeGVoJVW2Ftp25TwvCNIHdyotMlxSN1N99Uho7FhrsKSVY2B9vdIiFCu6pgFT0g_THXvYE2fAJGLxS647VBrHioxSszITQ7uf_iR60ax17QcmKcubkUMIL_mfZN-yB2A">
+<div class="absolute bottom-4 left-4 right-4 p-space-md rounded-xl bg-surface-container-lowest/90 backdrop-blur-md shadow-md flex items-center justify-between">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase"></span>
+<p class="font-headline-sm text-headline-sm text-primary-container mt-0.5"><br></p>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Right: Admissions Content & Actions -->
+<div class="lg:col-span-6 flex flex-col order-1 lg:order-2">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest mb-space-2xs">PENERIMAAN PESERTA DIDIK BARU</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mb-space-md leading-tight">
+            Mulai Perjalanan Menuju Masa Depan Gemilang
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+            Bergabunglah bersama keluarga besar SMAS Katolik Makale. Kami mengundang putra-putri berprestasi dari seluruh penjuru Tana Toraja, Toraja Utara, dan luar daerah untuk bertumbuh bersama dalam iklim pendidikan yang penuh kasih, ketelitian, dan integritas.
+          </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md mb-space-xl">
+<a class="inline-flex items-center justify-center gap-space-2xs px-space-lg py-space-sm bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim rounded-xl font-label-md text-label-md shadow-md transition-all" data-path="ppdb-(admissions)" href="#">
+<span class="">Daftar PPDB Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-2xs px-space-lg py-space-sm bg-surface-container-high text-primary-container hover:bg-surface-variant rounded-xl font-label-md text-label-md transition-all" data-path="profil-&amp;-sejarah-sekolah" href="#">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_month</span>
+<span class="">Jadwalkan Kunjungan Sekolah</span>
+</a>
+</div>
+<!-- Quick PPDB Requirements Checklist -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Jalur Prestasi Akademik &amp; Non-Akademik</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Tersedia Beasiswa Yayasan Peduli</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Fasilitas Asrama Siswa / Siswi Terpantau</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<span class="">Konsultasi Minat Bakat Bebas Biaya</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL: VIDEO PROFIL MODAL (INTERACTIVE) -->
+<div class="hidden fixed inset-0 z-50 items-center justify-center bg-primary-container/80 backdrop-blur-sm p-4" id="videoModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-2xl w-full p-space-lg shadow-2xl relative">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container mb-space-md">
+<div class="flex items-center gap-space-2xs text-primary-container">
+<span class="material-symbols-outlined text-secondary">play_circle</span>
+<h3 class="font-headline-sm text-headline-sm">Profil Kampus SMAS Katolik Makale</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" onclick="const modal = document.getElementById('videoModal'); modal.classList.add('hidden'); modal.classList.remove('flex');" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="aspect-video w-full rounded-xl overflow-hidden bg-primary flex flex-col items-center justify-center relative">
+<img class="w-full h-full object-cover opacity-80" data-alt="Video preview thumbnail of SMAS Katolik Makale students praying together in morning chapel assembly, golden Toraja morning light, serene and solemn atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE1PLzuQ2pyBf9Hof-E1KNnXwqYJ2oRBdOR45bk2VXy7GZdgnitAHaEZwNl_DGlbPo1s2_1r0dsvxZekiBSGLM1J8XOtPvPW-J9E0VO0xhJKrLFy5QdT45H3Y5HBT_s3X7NQj0KqznIFxV6AVCDciPbqc37HjQt8D_y7aX_Irjs3EAkx2GTtrh0CEI1A9eqkO-GHe2UCcRakginlTg9jONDXDucN5eLYwhNiLQhIgn-xqFmFHNGDLSRw">
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-primary/40">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-xl cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[36px]">play_arrow</span>
+</div>
+<span class="text-on-primary font-label-md text-label-md mt-space-sm">Tonton Selayang Pandang 3 Menit</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm text-center">
+        Mengenal lebih dekat kehidupan asrama, laboratorium, kegiatan rohani, dan dedikasi guru SMAS Katolik Makale.
+      </p>
+</div>
+</div>
+</div></main><footer class="w-full bg-primary-container text-on-primary"><div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shrink-0 bg-surface-container-lowest p-0.5"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-6L_ySIVt5m4MPY4WA7NciS4BvW9rBZoXVhXK179n25MwSS6lu1Qnxjtfa5qEiI_XoE62sQ-yzLOrJJuJi_I2VozUw6ewKTiACAz4XywwbYs2kTcGBOrhdBCpz7U4gGHZOlHulmHIliMj5bQfLp9AbyRGX4qyVU8sTuxDdvZ7LCks51Dz5QjsekeWscWezIcer4RIEMHoOuKPMNj3QGKmfmkYzGJFIawuzXTFwBSin2TN5Ar12NuQqVHhYEmjdvHUi3g" alt="Logo SMAS Katolik Makale" class="w-full h-full object-contain"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight">SMAS Katolik Makale</span><span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-dim uppercase">Tana Toraja</span></div></div><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Membentuk Karakter, Menginspirasi Masa Depan. Pendidikan unggul berasas nilai moralitas, kecendekiaan, dan integritas global.</p><div class="flex items-center gap-space-xs pt-space-xs"><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span></a></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Tautan Cepat</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="beranda" href="#">Beranda</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="profil-&amp;-sejarah-sekolah" href="#">Profil Sekolah</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">Kurikulum Akademik</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">Ekstrakurikuler</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="berita-&amp;-acara" href="#">Kalender Pendidikan</a></li></ul></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Hubungi Kami</h4><div class="space-y-space-sm font-body-sm text-body-sm text-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim mt-0.5">location_on</span><span class="">Jl. Musa No. 16 Makale, Tana Toraja, Sulawesi Selatan 91811</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">call</span><span class="">+62 542 860895 / (0423) 22123</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">mail</span><span class="">info@smaskatolikmakale.sch.id</span></div></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Warta Sekolah</h4><p class="font-body-sm text-body-sm text-surface-variant">Dapatkan Info &amp; Warta Sekolah berkala mengenai kegiatan dan prestasi teranyar kami.</p><form class="space-y-space-xs" onsubmit="return false;"><div class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-xs rounded-lg bg-surface-container-highest/20 text-on-primary placeholder:text-surface-dim focus:outline-none focus:ring-2 focus:ring-secondary font-body-sm text-body-sm" placeholder="Alamat surel Anda..." type="email"><button class="w-full py-space-xs px-space-md bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-2xs transition-colors shadow-sm" type="button"><span class="">Kirim Langganan</span><span class="material-symbols-outlined text-[16px]">send</span></button></div></form></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between text-surface-dim font-body-sm text-body-sm gap-space-sm"><p class="">© 2025 SMAS Katolik Makale. Hak Cipta Dilindungi Undang-Undang.</p><div class="flex items-center gap-space-lg"><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Privasi &amp; Legal</a><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Tata Tertib</a><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Peta Situs</a></div></div></div></footer>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

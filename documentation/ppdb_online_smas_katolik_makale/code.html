@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-bright": "#f8f9ff",
+        "tertiary-fixed-dim": "#b6c4ff",
+        "primary": "#00030a",
+        "inverse-primary": "#b6c7e9",
+        "on-primary-container": "#7586a5",
+        "on-surface": "#121c2a",
+        "secondary": "#7f5600",
+        "on-primary-fixed-variant": "#364763",
+        "error": "#ba1a1a",
+        "surface-variant": "#d9e3f6",
+        "secondary-fixed-dim": "#ffba40",
+        "surface-container-lowest": "#ffffff",
+        "surface": "#f8f9ff",
+        "primary-fixed": "#d6e3ff",
+        "background": "#f8f9ff",
+        "surface-container": "#e6eeff",
+        "secondary-container": "#ffb215",
+        "inverse-on-surface": "#eaf1ff",
+        "primary-container": "#0a1d37",
+        "tertiary": "#000211",
+        "surface-container-low": "#eff4ff",
+        "on-secondary-container": "#6b4800",
+        "on-tertiary-container": "#6981d4",
+        "on-secondary-fixed": "#281800",
+        "primary-fixed-dim": "#b6c7e9",
+        "on-surface-variant": "#44474d",
+        "on-secondary": "#ffffff",
+        "on-primary": "#ffffff",
+        "secondary-fixed": "#ffddae",
+        "on-error-container": "#93000a",
+        "tertiary-fixed": "#dce1ff",
+        "surface-dim": "#d0dbed",
+        "surface-tint": "#4e5f7c",
+        "tertiary-container": "#001752",
+        "on-tertiary-fixed": "#00164e",
+        "outline-variant": "#c5c6ce",
+        "outline": "#75777e",
+        "on-background": "#121c2a",
+        "on-primary-fixed": "#081c36",
+        "on-tertiary": "#ffffff",
+        "on-secondary-fixed-variant": "#604000",
+        "surface-container-highest": "#d9e3f6",
+        "on-error": "#ffffff",
+        "error-container": "#ffdad6",
+        "on-tertiary-fixed-variant": "#264191",
+        "surface-container-high": "#dee9fc",
+        "inverse-surface": "#27313f"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-xl": "2rem",
+        "gutter-tablet": "1.5rem",
+        "space-2xl": "3rem",
+        "gutter-mobile": "1rem",
+        "space-3xl": "4.5rem",
+        "space-md": "1rem",
+        "container-max": "1280px",
+        "space-xs": "0.5rem",
+        "gutter-desktop": "2rem",
+        "space-lg": "1.5rem",
+        "space-sm": "0.75rem",
+        "space-4xl": "6rem",
+        "space-2xs": "0.25rem"
+      },
+      "fontFamily": {
+        "display-hero-mobile": ["Playfair Display"],
+        "headline-lg-mobile": ["Playfair Display"],
+        "headline-sm": ["Playfair Display"],
+        "body-sm": ["Inter"],
+        "display-hero": ["Playfair Display"],
+        "stat-number": ["Playfair Display"],
+        "headline-lg": ["Playfair Display"],
+        "headline-md": ["Playfair Display"],
+        "label-eyebrow": ["Inter"],
+        "body-md": ["Inter"],
+        "body-lg": ["Inter"],
+        "label-md": ["Inter"]
+      },
+      "fontSize": {
+        "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "stat-number": ["32px", {"lineHeight": "36px", "fontWeight": "700"}],
+        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+        "label-eyebrow": ["12px", {"lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700"}],
+        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="bg-primary-container text-on-primary py-space-2xs px-gutter-mobile lg:px-gutter-desktop"><div class="max-w-container-max mx-auto flex flex-wrap justify-between items-center font-body-sm text-body-sm"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-space-2xs text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">location_on</span><span class="">Makale, Tana Toraja</span></div><div class="hidden sm:flex items-center gap-space-2xs text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">call</span><span class="">+62 542 860895 / (0423) 22123</span></div></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-2xs text-surface-container-high hover:text-secondary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">school</span><span class="">Portal Siswa</span></a><a class="flex items-center gap-space-2xs text-surface-container-high hover:text-secondary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">workspace_premium</span><span class="">Portal Alumni</span></a></div></div></div><div class="bg-surface-container-lowest/95 backdrop-blur-md"><div class="h-20 max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between"><a class="flex items-center gap-space-sm group text-left" data-path="beranda" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS2B8Kl2dYx9qiTyeyb4SRhcljyU2_Q8gwunp2CiHKchY_3uMlkDE7vixa-eq-EB2d0H0FTmCHEV57_kPA1VTp7-uDvcTD6rA26kDcMCiX2fB2WJlm-G2r-9cLJhrKSW0IVHcygmAWepxhtVyjObHNljnfeg0YolnjWxl3Xwo0no8mjwQqba34PLiHC7Cm0k-4-yWLLVuihvRVacWmrbtWCDsbyip0GeWufSQ_puKczKZNRc6PUphLpsmPXjfn4NnSo3Y" alt="Logo SMAS Katolik Makale" class="w-10 h-10 object-contain rounded-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container leading-none tracking-tight">SMAS KATOLIK MAKALE</span><span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase mt-0.5 tracking-widest">Veritas et Sapientia</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="beranda" href="#">Beranda</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="profil-&amp;-sejarah-sekolah" href="#">Profil</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="akademik-&amp;-kesiswaan" href="#">Akademik</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="akademik-&amp;-kesiswaan" href="#">Kesiswaan</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="berita-&amp;-acara" href="#">Berita</a><a aria-current="page" class="transition-colors py-2 text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8" data-path="ppdb-(admissions)" href="#">PPDB</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim rounded-xl font-label-md text-label-md shadow-[0_4px_12px_rgba(244,169,0,0.25)] transition-all gap-space-2xs" data-path="ppdb-(admissions)" href="#"><span class="">DAFTAR PPDB</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Hero Banner: Institutional Deep Navy with Golden Highlights -->
+<section class="relative bg-primary-container text-on-primary py-space-3xl px-gutter-mobile lg:px-gutter-desktop overflow-hidden">
+<!-- Subtle architectural background glow -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 bottom-0 w-80 h-80 rounded-full bg-primary-fixed/5 blur-2xl pointer-events-none"></div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-7 space-y-space-md">
+<div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-full bg-surface-container-highest/20 backdrop-blur-sm text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-secondary-fixed">PPDB TA 2025/2026 Dibuka</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-secondary-container leading-tight">
+            Bergabunglah Bersama SMAS Katolik Makale
+          </h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl leading-relaxed">
+            Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2025/2026. Mendidik generasi cerdas berintegritas iman, berwawasan global, dan berkarakter unggul di bumi Tana Toraja.
+          </p>
+<!-- Badges -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container-highest/15 backdrop-blur-md px-space-md py-space-xs rounded-xl text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">workspace_premium</span>
+<span class="font-label-md text-label-md">Akreditasi A BAN-S/M</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest/15 backdrop-blur-md px-space-md py-space-xs rounded-xl text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">school</span>
+<span class="font-label-md text-label-md">Beasiswa Yayasan Tersedia</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest/15 backdrop-blur-md px-space-md py-space-xs rounded-xl text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">apartment</span>
+<span class="font-label-md text-label-md">Asrama Putra &amp; Putri</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-2xs px-space-lg py-space-sm bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container font-label-md text-label-md rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5" href="#formulir-bantuan">
+<span class="">Daftar Sekarang Online</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-2xs px-space-lg py-space-sm bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-on-primary font-label-md text-label-md rounded-xl transition-colors" href="#jalur-pendaftaran">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+<span class="">Panduan Jalur Masuk</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<div class="rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest">
+<img class="w-full h-80 object-cover" data-alt="Tiga siswa SMA Katolik tersenyum mengenakan seragam rapi dengan lencana sekolah di kampus modern bernuansa akademis Toraja, pencahayaan alami terang bernuansa wibawa dan hangat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS-wJCMJ1hX70AFpOhBwaCendhbAGsrdBVaTC9iJ6TgdWdNdHu_z9PuXX7pj5QAzzJVULoVhReCWPxistaf24eYFHC8HGSxsnq9RDqZWLZ5_Lq6Kcdv6UeLBJ7vJrche1CxjpLUy-sTcXprZnjO41eCNSpMV3MrdLAvQvaxaMx4SUHbMnIND2lq3RUzOroNTZEs2t3LseNCwS57_TKXsSQ7lnwvsavieWAcf7VqD_0fP-ecWjP316or6RiGJLq18o0lAM3moOKh09_UBM">
+</div>
+<!-- Overlapping Achievement Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest text-on-surface p-space-md rounded-xl shadow-xl flex items-center gap-space-sm max-w-xs">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">military_tech</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container leading-none">98.4%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lulusan diterima di PTN &amp; Kedinasan ternama</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metric Ribbon Overlay -->
+<section class="bg-primary text-on-primary py-space-md px-gutter-mobile lg:px-gutter-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[32px]">groups</span>
+<div>
+<p class="font-stat-number text-stat-number text-on-primary leading-tight">600+</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Kapasitas Kursi PPDB</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[32px]">grade</span>
+<div>
+<p class="font-stat-number text-stat-number text-on-primary leading-tight">100%</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Guru Bersertifikasi</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[32px]">hub</span>
+<div>
+<p class="font-stat-number text-stat-number text-on-primary leading-tight">24+</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Klub &amp; Ekskul Aktif</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[32px]">diversity_3</span>
+<div>
+<p class="font-stat-number text-stat-number text-on-primary leading-tight">1000+</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Ikatan Alumni Global</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Alur Pendaftaran (Horizontal Stepper) -->
+<section class="py-space-3xl px-gutter-mobile lg:px-gutter-desktop bg-surface">
+<div class="max-w-container-max mx-auto space-y-space-2xl">
+<div class="text-center max-w-2xl mx-auto space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-secondary">Panduan Langkah Demi Langkah</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary-container">Alur Pendaftaran Peserta Didik</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Proses seleksi transparan, praktis, dan berpusat pada pengembangan potensi talenta setiap calon siswa.</p>
+</div>
+<!-- Stepper Grid with Connector Elements -->
+<div class="relative">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative z-10">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-fixed-dim flex items-center justify-center font-stat-number text-stat-number mb-space-md shadow-sm">
+                1
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">Isi Formulir Online</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Lengkapi biodata calon siswa, riwayat sekolah asal, data orang tua/wali, serta tentukan peminatan jalur seleksi.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs text-secondary font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">edit_document</span>
+<span class="">Estimasi: 10 Menit</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-fixed-dim flex items-center justify-center font-stat-number text-stat-number mb-space-md shadow-sm">
+                2
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">Serahkan Berkas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Unggah salinan digital rapor semester 1-5, Kartu Keluarga, akta lahir, dan sertifikat prestasi kejuaraan yang relevan.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs text-secondary font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+<span class="">Format: PDF / JPEG</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-fixed-dim flex items-center justify-center font-stat-number text-stat-number mb-space-md shadow-sm">
+                3
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">Tes &amp; Wawancara</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pelaksanaan asesmen potensi skolastik dasar serta pemetaan minat bakat bersama konselor pendidikan dan pastor sekolah.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs text-secondary font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span class="">Daring atau Luring</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-secondary-fixed-dim flex items-center justify-center font-stat-number text-stat-number mb-space-md shadow-sm">
+                4
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">Daftar Ulang</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Konfirmasi penerimaan resmi, pengukuran seragam sekolah, registrasi penempatan asrama, serta penyambutan murid baru.
+              </p>
+</div>
+<div class="mt-space-md pt-space-xs text-secondary font-label-md text-label-md flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="">Resmi Diterima</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Jalur Masuk & Beasiswa: Comparison Grid -->
+<section class="py-space-3xl px-gutter-mobile lg:px-gutter-desktop bg-surface-container-low" id="jalur-pendaftaran">
+<div class="max-w-container-max mx-auto space-y-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-secondary">Pilihan Jalur Masuk</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary-container">Jalur Seleksi &amp; Peluang Beasiswa</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Pilihlah jalur pendaftaran yang paling selaras dengan keunggulan prestasi akademik, potensi seni olahraga, atau dukungan afirmatif keluarga.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Jalur 1: Reguler -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-eyebrow text-label-eyebrow uppercase">Umum / Terbuka</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">ballot</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Jalur Reguler</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Dibuka bagi seluruh lulusan SMP/MTs sederajat dengan kriteria kelulusan akademis standar nasional.</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Seleksi nilai rapor semester 1-5</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Tes Kemampuan Akademik (TKA) dasar</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Wawancara kesiapan belajar</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Akses penuh fasilitas kampus &amp; lab</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-xs px-space-md bg-surface-container-high hover:bg-surface-variant text-primary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-2xs transition-colors" href="#formulir-bantuan">
+<span class="">Pilih Jalur Reguler</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Jalur 2: Prestasi Unggulan (Featured) -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-xl shadow-xl flex flex-col justify-between relative transform lg:-translate-y-2">
+<div class="absolute -top-3 right-6 bg-secondary-container text-on-secondary-container px-space-sm py-1 rounded-full font-label-eyebrow text-label-eyebrow uppercase shadow-sm">
+            Favorit Unggulan
+          </div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 rounded-full bg-surface-container-highest/20 text-secondary-fixed font-label-eyebrow text-label-eyebrow uppercase">Bebas Tes TKA</span>
+<span class="material-symbols-outlined text-secondary-container text-[24px]">emoji_events</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary">Jalur Prestasi</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high mt-space-2xs">Bagi siswa dengan capaian sains (OSN), seni budaya, olahraga, atau peringkat 1-3 paralel di sekolah asal.</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm">Potongan Biaya SPP hingga 50%</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm">Prioritas pemilihan asrama sekolah</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm">Pembinaan intensif olimpiade &amp; riset</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-primary">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px] mt-0.5">check_circle</span>
+<span class="font-body-sm text-body-sm">Bebas biaya pendaftaran PPDB</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-xs px-space-md bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-2xs transition-colors shadow-md" href="#formulir-bantuan">
+<span class="">Ajukan Jalur Prestasi</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Jalur 3: Beasiswa Keuskupan / Afirmasi -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-eyebrow text-label-eyebrow uppercase">Subsidi Penuh</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">handshake</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary-container">Beasiswa Keuskupan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Program beasiswa afirmatif Keuskupan Agung Makassar bagi siswa berpotensi tinggi dari wilayah pelosok Toraja.</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Subsidi 100% biaya pendidikan &amp; SPP</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Tunjangan akomodasi asrama gratis</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Surat rekomendasi Pastor Paroki</span>
+</div>
+<div class="flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">check</span>
+<span class="font-body-sm text-body-sm">Bimbingan mentor rohani &amp; akademik</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-xs px-space-md bg-surface-container-high hover:bg-surface-variant text-primary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-2xs transition-colors" href="#formulir-bantuan">
+<span class="">Pelajari Beasiswa</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Life & Asrama Showcase -->
+<section class="py-space-3xl px-gutter-mobile lg:px-gutter-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-secondary">Fasilitas Kehidupan Sekolah</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary-container">
+            Lingkungan Asrama Terbina &amp; Suasana Pembelajaran Modern
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            SMAS Katolik Makale memadukan disiplin pembinaan karakter Kristiani dengan fasilitas sains dan teknologi terkini. Kompleks asrama kami menyediakan hunian yang aman, kondusif, dan penuh kehangatan persaudaraan bagi siswa yang datang dari berbagai pelosok Nusantara.
+          </p>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container-low p-space-md rounded-xl">
+
+
+
+</div>
+
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="grid grid-cols-2 gap-space-md">
+<div class="rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-56 object-cover" data-alt="Gedung asrama sekolah SMAS Katolik Makale dengan arsitektur perpaduan khas Toraja dan modern, taman hijau asri yang tertata rapi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4p2-FofQmUozYpzJhgOYLKeltAJTqaVZsO0dBdKCldTFzH-x8GqQBI5_kcBcfOHc18ExHdCZr2tI4ySHzopmqOh_SXbmu0EF_obEVxnc4jE0miaLxlDziG5PVvQMeEUqIgGKwgYQtidbG7i0T6d5g1dVBCTYrMcPU4BUBcouEZhsS2pAsr4d0w64xaN4DDqHBeqVidPTun2ubza_K86F60p6PXRufmsLFaearXmgb7KrnmUB1OhyFH5agrruiZ9oL4l9i00m08KoKlDk">
+</div>
+<div class="rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-56 object-cover" data-alt="Siswa-siswi SMA Katolik sedang berdiskusi di laboratorium sains modern dengan mikroskop dan peralatan riset didampingi guru pembimbing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx0oRaXteRmQaQDQg2NbQGqH_AmoHj9NGTzy61Z2M8vTKwHCMSF6Sh2SZfsgCJJpa_uRsoY0EJckpeqEQfNoxirviDFMhmdBc97oI0aLBevwRIKkxHBpRY49eyMRD59Zm9eSa8PRmHxFo4NRCM8zIbra6FoV04j-CMf8Z4y70ioBiZSw4UX4-xhM2vlYkg00kMKYeLEIb3g6khi5ACxz1PEVlL-K8rC6af7ICJV0XDHeJu_3ztvWXInfrtpyA_T4xm2FlByqCnEPPKcf4">
+</div>
+<div class="col-span-2 rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-64 object-cover" data-alt="Kegiatan ekstrakurikuler musik tradisional Toraja dan marching band siswa SMAS Katolik Makale di lapangan upacara berlatar bukit kapur khas Makale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6R5HVoKy1wwoylhm080dt7ofGz2tfQSIn80R2opZghcYGYm5O9-BfB-o60FXPHzUREbJvoM8OkaT9DsP7RDtz8Yo-7rypcH9qkizqePWawuwo0gGGlUCEtlYYcjl_yt0w8zvusZmuWtj-ZkG6vphp2e62iAQ0YqN6PPm4HlBm6tzqlxfuaS8AqFlMh9J5L81g0-Z9HoA6yHV7WiEvlOsOQkr_f_g7XwHSPfoSiWsxM6vaVeG6q53gipIJqaDKb8zxORTHi3CBB4wnyF4">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontak / Bantuan Pendaftaran Cepat & Box Info (2 Kolom) -->
+<section class="py-space-3xl px-gutter-mobile lg:px-gutter-desktop bg-surface-container-low" id="formulir-bantuan">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-start">
+<!-- Left Column: White Form Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-xl lg:p-space-2xl rounded-2xl shadow-xl space-y-space-lg">
+<div class="space-y-space-2xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-secondary">Layanan Konsultasi</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary-container">Butuh Bantuan Pendaftaran?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tinggalkan data kontak Anda. Tim panitia PPDB kami akan menghubungi Anda secara pribadi melalui WhatsApp untuk panduan berkas atau info asrama.
+            </p>
+</div>
+<form class="space-y-space-md" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+<div class="space-y-space-2xs">
+<label class="block font-label-md text-label-md text-on-surface" for="student_name">
+                Nama Lengkap Calon Siswa / Wali <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="student_name" name="student_name" placeholder="Contoh: Maria Gabriel Ranteallo" required="" type="text">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-space-2xs">
+<label class="block font-label-md text-label-md text-on-surface" for="origin_school">
+                  Asal Sekolah (SMP / MTs) <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="origin_school" name="origin_school" placeholder="Contoh: SMP Katolik Makale" required="" type="text">
+</div>
+<div class="space-y-space-2xs">
+<label class="block font-label-md text-label-md text-on-surface" for="phone_wa">
+                  Nomor WhatsApp Aktif <span class="text-error">*</span>
+</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="phone_wa" name="phone_wa" placeholder="0812-XXXX-XXXX" required="" type="tel">
+</div>
+</div>
+<div class="space-y-space-2xs">
+<label class="block font-label-md text-label-md text-on-surface" for="program_path">
+                Jalur Seleksi yang Diminati <span class="text-error">*</span>
+</label>
+<select class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all" id="program_path" name="program_path" required="">
+<option value="">Pilih Jalur Pendaftaran</option>
+<option value="reguler">Jalur Reguler (Umum)</option>
+<option value="prestasi">Jalur Prestasi Akademik &amp; Non-Akademik</option>
+<option value="beasiswa">Beasiswa Afirmasi Keuskupan</option>
+<option value="asrama">Pendaftaran Program Boarding (Asrama Khusus)</option>
+</select>
+</div>
+<div class="space-y-space-2xs">
+<label class="block font-label-md text-label-md text-on-surface" for="notes">
+                Pertanyaan Tambahan / Catatan Khusus
+              </label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all resize-none" id="notes" name="notes" placeholder="Tuliskan jika ingin menanyakan info kapasitas asrama, beasiswa saudara kandung, dll..." rows="3"></textarea>
+</div>
+<div class="pt-space-xs">
+<button class="w-full py-space-md px-space-lg bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container font-headline-sm text-label-md rounded-xl transition-all shadow-lg flex items-center justify-center gap-space-xs tracking-wide" type="submit">
+<span class="">Minta Informasi Pendaftaran Sekarang</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+<div class="hidden p-space-sm rounded-lg bg-surface-container-high text-primary-container text-body-sm font-body-sm flex items-center gap-space-xs" id="form-feedback">
+<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span>
+<span class="">Terima kasih! Panitia PPDB SMAS Katolik Makale akan segera mengirimkan panduan via WhatsApp.</span>
+</div>
+</form>
+</div>
+<!-- Right Column: Secretariat Contacts & Quick FAQ Accordion -->
+<div class="lg:col-span-5 space-y-space-lg">
+<!-- Secretariat Card -->
+<div class="bg-primary-container text-on-primary p-space-xl rounded-2xl shadow-xl space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">desk</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Sekretariat PPDB</h3>
+<p class="font-body-sm text-body-sm text-surface-variant">Layanan tatap muka &amp; informasi langsung</p>
+</div>
+</div>
+<div class="space-y-space-sm text-surface-container-high font-body-md text-body-md">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px] mt-0.5">location_on</span>
+<span class="">Jl. Musa No. 16 Makale, Tana Toraja, Sulawesi Selatan 91811</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">schedule</span>
+<span class="">Senin – Sabtu: 07.30 – 15.00 WITA</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">call</span>
+<span class="">(0423) 22123 / +62 542 860895</span>
+</div>
+</div>
+<!-- WhatsApp Dedicated Helpline Badge -->
+<a class="inline-flex items-center justify-between w-full p-space-sm rounded-xl bg-surface-container-highest/20 hover:bg-surface-container-highest/30 transition-all text-on-primary" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-primary leading-tight">Hotline WhatsApp Panitia</p>
+<p class="font-body-sm text-body-sm text-surface-variant">+62 812-4200-9988</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[20px]">open_in_new</span>
+</a>
+</div>
+<!-- Quick FAQ Accordion -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm space-y-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Pertanyaan Umum (FAQ)</h3>
+<div class="space-y-space-xs">
+<!-- FAQ Item 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low cursor-pointer group" onclick="this.querySelector('.faq-answer').classList.toggle('hidden');">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Berapa batasan usia calon siswa?</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-[20px]">expand_more</span>
+</div>
+<p class="faq-answer hidden mt-space-2xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Calon peserta didik baru berusia maksimal 21 tahun pada awal tahun ajaran 2025/2026 dan telah menyelesaikan pendidikan jenjang SMP/MTs.
+                </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low cursor-pointer group" onclick="this.querySelector('.faq-answer').classList.toggle('hidden');">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Apakah wajib tinggal di asrama?</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-[20px]">expand_more</span>
+</div>
+<p class="faq-answer hidden mt-space-2xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Asrama diutamakan bagi siswa dari luar Makale/Tana Toraja atau penerima Beasiswa Afirmasi. Bagi siswa berdomisili lokal diperkenankan tinggal bersama keluarga (non-asrama).
+                </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low cursor-pointer group" onclick="this.querySelector('.faq-answer').classList.toggle('hidden');">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Bagaimana syarat Beasiswa Keuskupan?</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-[20px]">expand_more</span>
+</div>
+<p class="faq-answer hidden mt-space-2xs font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Menyertakan Surat Keterangan Tidak Mampu (SKTM), rekomendasi resmi dari Pastor Paroki setempat, serta salinan buku rapor dengan rata-rata nilai minimal 80.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Calendar & Important Dates -->
+<section class="py-space-3xl px-gutter-mobile lg:px-gutter-desktop bg-surface">
+<div class="max-w-container-max mx-auto space-y-space-xl">
+<div class="text-center max-w-xl mx-auto space-y-space-2xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-secondary">Jadwal Penting</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary-container">Kalender Gelombang PPDB 2025</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-low space-y-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-eyebrow text-label-eyebrow uppercase">Gelombang I</span>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Jalur Prestasi &amp; Afirmasi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pendaftaran: 15 Januari – 28 Februari 2025</p>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">Pengumuman: 10 Maret 2025</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low space-y-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-eyebrow text-label-eyebrow uppercase">Gelombang II</span>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Jalur Reguler Tahap 1</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pendaftaran: 1 Maret – 30 April 2025</p>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">Pengumuman: 12 Mei 2025</p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low space-y-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-eyebrow text-label-eyebrow uppercase">Gelombang III</span>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Jalur Reguler Tahap 2 &amp; Pindahan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pendaftaran: 5 Mei – 25 Juni 2025</p>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">Pengumuman: 2 Juli 2025</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="bg-primary-container text-on-primary py-space-2xl px-gutter-mobile lg:px-gutter-desktop text-center">
+<div class="max-w-2xl mx-auto space-y-space-md">
+<h3 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-secondary-container">
+        Siapkan Masa Depan Gemilang di Tana Toraja
+      </h3>
+<p class="font-body-md text-body-md text-surface-container-high">
+        Daftarkan putra-putri Anda hari ini dan jadilah bagian dari tradisi kecendekiaan serta keteguhan budi pekerti SMAS Katolik Makale.
+      </p>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-2xs px-space-xl py-space-sm bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container font-label-md text-label-md rounded-xl shadow-lg transition-transform hover:scale-105" href="#formulir-bantuan">
+<span class="">Mulai Pengisian Formulir</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary"><div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN4LCeU4SxkF4R6RlRmay_hdO_LgO4Uq3JTflZiKu-kb8tDEjYYk_PjhWFjX3q4Fcw4vAfa4E7Qi_wJlWmSEZ8Qxp-NRUHotQPNdxQ-E--Crwioig8oSuR1mTC6bRc2p9B5yz0NtVmLV8CoDwixRw4PhMq1PtELstGXR2W6VIwD5UyuUEzJt-j9TBpgpbU1x9SFlxLIdn0W53jKV8KjFm-M9WdLt5vLKw4q1_AIjg_8BK7Q0CTTFJvvI_58_EPKSU_7Ew" alt="Logo SMAS Katolik Makale" class="w-10 h-10 object-contain rounded-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight">SMAS Katolik Makale</span><span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-dim uppercase">Tana Toraja</span></div></div><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Membentuk Karakter, Menginspirasi Masa Depan. Pendidikan unggul berasas nilai moralitas, kecendekiaan, dan integritas global.</p><div class="flex items-center gap-space-xs pt-space-xs"><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span></a></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Tautan Cepat</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="beranda" href="#">Beranda</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="profil-&amp;-sejarah-sekolah" href="#">Profil Sekolah</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">Kurikulum Akademik</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">Ekstrakurikuler</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="berita-&amp;-acara" href="#">Kalender Pendidikan</a></li></ul></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Hubungi Kami</h4><div class="space-y-space-sm font-body-sm text-body-sm text-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim mt-0.5">location_on</span><span class="">Jl. Musa No. 16 Makale, Tana Toraja, Sulawesi Selatan 91811</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">call</span><span class="">+62 542 860895 / (0423) 22123</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">mail</span><span class="">info@smaskatolikmakale.sch.id</span></div></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Warta Sekolah</h4><p class="font-body-sm text-body-sm text-surface-variant">Dapatkan Info &amp; Warta Sekolah berkala mengenai kegiatan dan prestasi teranyar kami.</p><form class="space-y-space-xs" onsubmit="return false;"><div class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-xs rounded-lg bg-surface-container-highest/20 text-on-primary placeholder:text-surface-dim focus:outline-none focus:ring-2 focus:ring-secondary font-body-sm text-body-sm" placeholder="Alamat surel Anda..." type="email"><button class="w-full py-space-xs px-space-md bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-2xs transition-colors shadow-sm" type="button"><span class="">Kirim Langganan</span><span class="material-symbols-outlined text-[16px]">send</span></button></div></form></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between text-surface-dim font-body-sm text-body-sm gap-space-sm"><p class="">© 2025 SMAS Katolik Makale. Hak Cipta Dilindungi Undang-Undang.</p><div class="flex items-center gap-space-lg"><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Privasi &amp; Legal</a><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Tata Tertib</a><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Peta Situs</a></div></div></div></footer>
+
+
+
+</body></html>

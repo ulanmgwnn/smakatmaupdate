@@ -1,0 +1,624 @@
+<!DOCTYPE html><html lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-bright": "#f8f9ff",
+        "tertiary-fixed-dim": "#b6c4ff",
+        "primary": "#00030a",
+        "inverse-primary": "#b6c7e9",
+        "on-primary-container": "#7586a5",
+        "on-surface": "#121c2a",
+        "secondary": "#7f5600",
+        "on-primary-fixed-variant": "#364763",
+        "error": "#ba1a1a",
+        "surface-variant": "#d9e3f6",
+        "secondary-fixed-dim": "#ffba40",
+        "surface-container-lowest": "#ffffff",
+        "surface": "#f8f9ff",
+        "primary-fixed": "#d6e3ff",
+        "background": "#f8f9ff",
+        "surface-container": "#e6eeff",
+        "secondary-container": "#ffb215",
+        "inverse-on-surface": "#eaf1ff",
+        "primary-container": "#0a1d37",
+        "tertiary": "#000211",
+        "surface-container-low": "#eff4ff",
+        "on-secondary-container": "#6b4800",
+        "on-tertiary-container": "#6981d4",
+        "on-secondary-fixed": "#281800",
+        "primary-fixed-dim": "#b6c7e9",
+        "on-surface-variant": "#44474d",
+        "on-secondary": "#ffffff",
+        "on-primary": "#ffffff",
+        "secondary-fixed": "#ffddae",
+        "on-error-container": "#93000a",
+        "tertiary-fixed": "#dce1ff",
+        "surface-dim": "#d0dbed",
+        "surface-tint": "#4e5f7c",
+        "tertiary-container": "#001752",
+        "on-tertiary-fixed": "#00164e",
+        "outline-variant": "#c5c6ce",
+        "outline": "#75777e",
+        "on-background": "#121c2a",
+        "on-primary-fixed": "#081c36",
+        "on-tertiary": "#ffffff",
+        "on-secondary-fixed-variant": "#604000",
+        "surface-container-highest": "#d9e3f6",
+        "on-error": "#ffffff",
+        "error-container": "#ffdad6",
+        "on-tertiary-fixed-variant": "#264191",
+        "surface-container-high": "#dee9fc",
+        "inverse-surface": "#27313f"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-xl": "2rem",
+        "gutter-tablet": "1.5rem",
+        "space-2xl": "3rem",
+        "gutter-mobile": "1rem",
+        "space-3xl": "4.5rem",
+        "space-md": "1rem",
+        "container-max": "1280px",
+        "space-xs": "0.5rem",
+        "gutter-desktop": "2rem",
+        "space-lg": "1.5rem",
+        "space-sm": "0.75rem",
+        "space-4xl": "6rem",
+        "space-2xs": "0.25rem"
+      },
+      "fontFamily": {
+        "display-hero-mobile": ["Playfair Display"],
+        "headline-lg-mobile": ["Playfair Display"],
+        "headline-sm": ["Playfair Display"],
+        "body-sm": ["Inter"],
+        "display-hero": ["Playfair Display"],
+        "stat-number": ["Playfair Display"],
+        "headline-lg": ["Playfair Display"],
+        "headline-md": ["Playfair Display"],
+        "label-eyebrow": ["Inter"],
+        "body-md": ["Inter"],
+        "body-lg": ["Inter"],
+        "label-md": ["Inter"]
+      },
+      "fontSize": {
+        "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "fontWeight": "600"}],
+        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "stat-number": ["32px", {"lineHeight": "36px", "fontWeight": "700"}],
+        "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+        "label-eyebrow": ["12px", {"lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700"}],
+        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="bg-primary-container text-on-primary py-space-2xs px-gutter-mobile lg:px-gutter-desktop"><div class="max-w-container-max mx-auto flex flex-wrap justify-between items-center font-body-sm text-body-sm"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-space-2xs text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">location_on</span><span class="">Makale, Tana Toraja</span></div><div class="hidden sm:flex items-center gap-space-2xs text-surface-container-high"><span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">call</span><span class="">+62 542 860895 / (0423) 22123</span></div></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-2xs text-surface-container-high hover:text-secondary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">school</span><span class="">Portal Siswa</span></a><a class="flex items-center gap-space-2xs text-surface-container-high hover:text-secondary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined text-[15px]">workspace_premium</span><span class="">Portal Alumni</span></a></div></div></div><div class="bg-surface-container-lowest/95 backdrop-blur-md"><div class="h-20 max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between"><a class="flex items-center gap-space-sm group text-left" data-path="beranda" href="#"><div class="w-11 h-11 rounded-xl bg-surface-container-lowest flex items-center justify-center p-0.5 shadow-[0_2px_8px_rgba(10,29,55,0.12)] overflow-hidden shrink-0"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwOqC_xi0fyehtwZzFwNRTTQhOrlWfkcyfEdEzKGj1jyWEZoV2TYTB-n-WEQt5aXXFKP3lN4ajphtcn5VXQfEKFIr-DBBgU0wFAotKvBgYZgrd2NusHf18b2AGa-AgMOJ6LlMNyevLfsMRlOCMubFHWYzruCf0zCbtflcFiHvuA5I-kUkFSB6mpJOCtMBZZ7hEy7q2aVKLt50UzHLnkB1_LsWTmqxq39ma1oq2kTDNLX0IIySzpsOz8rqRv6pPM-4hUIU" alt="Logo SMAS Katolik Makale" class="w-full h-full object-contain"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container leading-none tracking-tight">SMAS KATOLIK MAKALE</span><span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase mt-0.5 tracking-widest">FIDES,SCIENTIA, HUMANIORA</span></div></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="beranda" href="#">Beranda</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="profil-&amp;-sejarah-sekolah" href="#">Profil</a><a aria-current="page" class="transition-colors py-2 text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8" data-path="akademik-&amp;-kesiswaan" href="#">Akademik</a><a aria-current="page" class="transition-colors py-2 text-secondary font-bold underline decoration-secondary decoration-2 underline-offset-8" data-path="akademik-&amp;-kesiswaan" href="#">Kesiswaan</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="berita-&amp;-acara" href="#">Berita</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="ppdb-(admissions)" href="#">PPDB</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim rounded-xl font-label-md text-label-md shadow-[0_4px_12px_rgba(244,169,0,0.25)] transition-all gap-space-2xs" data-path="ppdb-(admissions)" href="#"><span class="">DAFTAR PPDB</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Academic Hero Showcase -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden pb-space-3xl">
+<!-- Subtle architectural background accent -->
+<div class="absolute inset-0 bg-[radial-gradient(#d9e3f6_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-xl">
+<!-- Breadcrumb & Kicker -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-sm">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest bg-secondary-fixed/50 px-space-xs py-1 rounded">
+          Keunggulan Pembelajaran &amp; Potensi Siswa
+        </span>
+<span class="text-outline-variant font-body-sm text-body-sm">•</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Akademik &amp; Kesiswaan</span>
+</div>
+<!-- Main Headline & Narrative Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end mb-space-2xl">
+<div class="lg:col-span-8 space-y-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-primary-container leading-tight">
+            Pengembangan Diri <span class="italic font-normal text-secondary">&amp;</span> Keunggulan Akademik
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-3xl">
+            Menyelaraskan standar Kurikulum Merdeka Berbagi dengan fondasi spiritualitas Katolik yang kokoh serta keluhuran kearifan lokal Tana Toraja. Kami membina insan cendekia yang berdaya saing global, berintegritas moral tinggi, dan berjiwa kepemimpinan melayani.
+          </p>
+</div>
+<!-- Quick Summary Key Metrics -->
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-secondary-fixed-dim flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">verified</span>
+</div>
+<div>
+<div class="font-stat-number text-stat-number text-primary-container leading-none">A Unggul</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Akreditasi BAN-S/M Nasional</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">biotech</span>
+</div>
+<div>
+<div class="font-stat-number text-stat-number text-primary-container leading-none">100%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Laboratorium Sains &amp; Komputasi Digital</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Anchor Ribbon (Stats Strip inspired by elite academia) -->
+<div class="w-full bg-primary-container text-on-primary rounded-xl p-space-lg shadow-xl -mb-space-2xl relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-secondary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div>
+<span class="block font-stat-number text-stat-number text-on-primary leading-tight">18:1</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Rasio Siswa-Guru</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-secondary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div>
+<span class="block font-stat-number text-stat-number text-on-primary leading-tight">96.8%</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Tembus PTN &amp; Kedinasan</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-secondary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+<div>
+<span class="block font-stat-number text-stat-number text-on-primary leading-tight">24+</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Klub &amp; Ekskul Aktif</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-lg bg-surface-container-highest/10 flex items-center justify-center text-secondary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<div>
+<span class="block font-stat-number text-stat-number text-on-primary leading-tight">Dual</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Peminatan STEM &amp; Humaniora</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curricular Pillars Sub-section -->
+<section class="w-full bg-surface-container-low pt-space-4xl pb-space-3xl">
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Tiga Pilar Pendidikan</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mt-space-2xs">Ekosistem Belajar Menyeluruh</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Mengintegrasikan kecakapan kognitif, kepekaan etis kristiani, dan kecintaan pada warisan luhur Tana Toraja.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Kurikulum Merdeka</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Model pembelajaran berbasis proyek (P5) yang mendorong penyelidikan mandiri, penalaran kritis, serta kesiapan ujian skolastik perguruan tinggi favorit.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+<span class="">Fokus Sains &amp; Sosial Terapan</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">church</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Nilai Karakter Kristiani</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Pembinaan rekoleksi berkala, misa komunitas sekolah, dan penanaman <em>Veritas et Sapientia</em> (Kebenaran dan Kebijaksanaan) dalam kehidupan sehari-hari.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+<span class="">Formasi Spiritual Berkesinambungan</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[26px]">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Kearifan Budaya Toraja</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Eksplorasi seni ukir <em>Passura'</em>, sastra tutur, musik tradisional bambu, serta etika musyawarah <em>Kombongan</em> sebagai pembentuk identitas kebangsaan.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-2xs text-secondary font-label-md text-label-md">
+<span class="">Harmoni Warisan Leluhur</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fasilitas Unggulan (Image & Text Alternating Layout) -->
+<section class="w-full bg-surface py-space-4xl">
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-3xl gap-space-md">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Infrastruktur Berstandar Internasional</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mt-space-2xs">Fasilitas Unggulan Kampus</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Dirancang khusus untuk mendukung eksperimentasi saintifik, riset literasi tanpa batas, serta ekspresi kebugaran dan seni panggung.
+        </p>
+</div>
+<div class="space-y-space-3xl">
+<!-- Row 1: Image Left, Text Right (Teknologi & Riset) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 relative group">
+<div class="relative overflow-hidden rounded-xl shadow-lg aspect-[16/10] bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern high school computer science and robotics laboratory at SMAS Katolik Makale with students in smart uniforms collaborating over coding microcontrollers, interactive digital whiteboards glowing in navy blue and warm golden hues, clean sleek workstations, natural light streaming through expansive glass windows overlooking greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyUMg_xlijaLQwom5eGBq_a-LL4TsQfWSf4m9SUBQGxSsAD0FUmqFcGnrTNTxrmad8fPwZYlUaqUmXJsnt3W24vudDY18fchQZ44c-a7cD4k-0nnmxvWGZtSYXTYEzqYWgeUMyJByE7R8nEQsMqDEg2rCJzUDDtltd934wOCjDQxxaQMgm8yGavb0USJmYsPHsEdEkf89T7Jw6FCvHgmPY8LCQw9VywSLZTGP4FoRAqt4Y1iRaMMM7cqikbLZ5FM0ZhPp2SzLNuR4xwqU">
+<div class="absolute top-4 left-4 bg-primary-container/90 backdrop-blur-sm text-on-primary px-space-sm py-1 rounded font-label-eyebrow text-label-eyebrow">
+                LAB KOMPUTER</div>
+</div>
+<!-- Medallion floating badge -->
+<div class="hidden sm:flex absolute -bottom-6 -right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl items-center gap-space-sm max-w-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">memory</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-primary-container block font-label-md">Perangkat Komputer</strong></div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-space-md lg:pl-space-md">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Inovasi STEM Masa Depan</span>
+<h3 class="font-headline-md text-headline-md text-primary-container leading-snug">
+              Fasilitas Teknologi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed"></p><p data-path-to-node="5,0" class=""><b data-path-to-node="5,0" data-index-in-node="0">Lab Komputer SMAKATMA</b></p><p data-path-to-node="5,1" class="">Wadah kreativitas dan inovasi digital siswa. Tempat di mana teori teknologi bertemu dengan praktik nyata untuk melahirkan generasi yang cakap digital dan siap bersaing di era modern.</p><p></p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="">Laboratorium Fisika, Kimia, &amp; Biologi</span>
+</li>
+
+<li class="flex items-center gap-space-xs">
+
+
+</li>
+</ul>
+</div>
+</div>
+<!-- Row 2: Text Left, Image Right (Perpustakaan Digital St. Thomas Aquinas) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 order-2 lg:order-1 space-y-space-md lg:pr-space-md">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Pusat Studi &amp; Literasi</span>
+<h3 class="font-headline-md text-headline-md text-primary-container leading-snug">
+              Perpustakaan SMAKATMA</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Sebuah suaka hening untuk mengasah ketajaman intelektual. Menyediakan lebih dari 15.000 koleksi buku fisik, akses ke ribuan jurnal ilmiah daring internasional, serta kubikel baca kedap suara dengan tata pencahayaan ramah mata.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-stat-number text-stat-number text-primary-container">1000+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Buku &amp; Naskah Referensi</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<div class="font-stat-number text-stat-number text-primary-container">24/7</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Akses e-Library Siswa</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 relative group">
+<div class="relative overflow-hidden rounded-xl shadow-lg aspect-[16/10] bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Interior of St. Thomas Aquinas digital library at a distinguished Catholic high school, warm oak wood bookshelves paired with deep navy blue reading nooks, students immersed in study, soft amber pendant lamps, floor-to-ceiling glass partition, polished aesthetic with Torajan architectural carvings subtly framing the reading mezzanine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNyffxs74Hmit_JznvVP_8DAWWzT6x5290j1ujwEHvAvpxphYwzifa5ky6mJ2cLnexvN2i0p1G9pmwOkCSNzaKIPVuBoFEe5OZCViIP8qxW_klqHV0oDiltu0LTGXhsP11l3TQl9QMMn5yM_8q3lv48aOsY_V0-osMG3WqGfuH47beGfc4Kf8KIXM1KQcmVM2Qkegsf8ElgkFMtmN0bAQOmAJ7PBppoiA80sB1DGoV0_FYHjEBZ7dcaQ">
+<div class="absolute top-4 right-4 bg-primary-container/90 backdrop-blur-sm text-on-primary px-space-sm py-1 rounded font-label-eyebrow text-label-eyebrow">
+                REPOSITORI AKADEMIK TERPADU
+              </div>
+</div>
+<!-- Floating accent card -->
+<div class="hidden sm:flex absolute -bottom-6 -left-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl items-center gap-space-sm max-w-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed-dim flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">local_library</span>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Row 3: Image Left, Text Right (Sarana Olahraga & Gelanggang Seni) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 relative group">
+<div class="relative overflow-hidden rounded-xl shadow-lg aspect-[16/10] bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Spacious multipurpose indoor sports arena and cultural auditorium at an elite private academy, polished wooden basketball court marked with tournament lines, high acoustic timber ceiling, students practicing basketball and cultural dance performances in harmonious background lighting with school banners hanging proudly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx11xCDyYIMvSOj8yqlGap15EF3TFRVmmd4GNZGGWdXKOKGRjRMW4GVkUEaKISEcgu3IWA3tDe7J5nozag7_PkANEV_zMlWmY24O49RQlMj2tuwEKSbJQfCgrhVsAvFtpuRhlcj2J3LXwdqtwHwTWbO3InVqnUDu3NTQDUTAeSqkAI2-yE2WdYdOHsVo7yx2B5DAHVHM0i10N94s_Zqijb_s6x2JE-KnDXkyXtNFZxDOQwSVEH7e9FJoIw-Ki9oAeR7qx0Lcx4BOuVebw">
+<div class="absolute top-4 left-4 bg-primary-container/90 backdrop-blur-sm text-on-primary px-space-sm py-1 rounded font-label-eyebrow text-label-eyebrow">
+                GELANGGANG MULTIFUNGSI
+              </div>
+</div>
+<div class="hidden sm:flex absolute -bottom-6 -right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-xl items-center gap-space-sm max-w-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">theater_comedy</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-primary-container block font-label-md"><span style="color: rgb(18, 28, 42); font-weight: 400;" class="">Panggung seni</span></strong></div>
+</div>
+</div>
+<div class="lg:col-span-5 space-y-space-md lg:pl-space-md">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Kebugaran Ragawi &amp; Seni Panggung</span>
+<h3 class="font-headline-md text-headline-md text-primary-container leading-snug">
+              Sarana Olahraga &amp; Gelanggang Seni Budaya
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Pendidikan yang seimbang menuntut keselarasan antara ketajaman otak dan ketangkasan raga. Gelanggang olahraga berstandar nasional dan auditorium akustik kami memfasilitasi kejuaraan DBL basket, bulutangkis, pentas tari tradisional Toraja, dan festival orkestra rohani.
+            </p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="">Lapangan Basket &amp; Voli&nbsp;&nbsp;</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="">Auditorium Pertunjukan dengan Sistem Tata Suara Akustik Profesional</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="">Pusat Kebugaran Fisik Siswa dan Ruang Ganti Atlet Terpadu</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Direktori Ekstrakurikuler (Clean 3-Column Editorial Grid) -->
+<section class="w-full bg-surface-container-low py-space-4xl">
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-eyebrow text-label-eyebrow text-secondary uppercase tracking-widest">Pengembangan Talenta Siswa</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container mt-space-2xs">Direktori Ekstrakurikuler Unggulan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Wadah penempaan bakat minat, jiwa kepemimpinan, dan sportivitas yang dikawal langsung oleh pelatih profesional dan guru pembimbing berdedikasi.
+        </p>
+</div>
+<!-- 6 Clean White Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Pramuka Katma & Sispa -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Indonesian high school Scout troop and nature lovers club camping and practicing orientation in the misty pine mountains of Tana Toraja, disciplined students wearing brown scout uniforms with red-white neckerchiefs, teamwork under crisp morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcmcEyzPDwSrKq-_Hh4ymXfkhGNawkksTTkxcl9NyfRlmv1IWtfQv28ntmJqIoF_So8Zk4Irc7F3eLu0xZ8W2XSTEZKzZy36fKCVzqhKNjMwR59oR0UW6qJBHnarSPWoXe_qEtNmVsJzENFkk2kMNeEXKOBKFCt1uvbYFxUCPMU8QTYNv-PqT-NcEVGYesJbZtApGCUXEDQmjucmrWGj44xTF_N57ZC9Zanvff2qv8CBzwlRWBuPfRiY4KhwMOCPbp9CY4U4GjF-nKd6c">
+
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-2xs text-secondary font-label-eyebrow text-label-eyebrow mb-1 uppercase">
+<span class="material-symbols-outlined text-[15px]">terrain</span>
+<span class="">Kepanduan &amp; Alam Bebas</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Pramuka Katma &amp; Sispa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pendidikan watak kesatria, navigasi darat, pelestarian ekosistem Toraja, serta kesiapsiagaan bencana yang melatih kemandirian dan rasa cinta tanah air.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md">
+<span class="text-secondary font-bold">Gugus Depan 01-085</span>
+<a class="text-primary-container hover:text-secondary flex items-center gap-1" href="#">
+<span class="">Rincian</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 2: Falsetto Choir -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Catholic school choir students performing solemnly in an elegant church chapel, holding sheet music folders, wearing navy blue choir robes with golden stoles, focused expressive singing faces with warm stained glass light illuminating them." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2frnZm3WWmgLkBhk1rBwiXITtB07uXmH5JPdtGlL9QI72WtQhsbiOHM6ia5GsieUpjVGSezLD-p4Q2Ma4BP0odMA4LsIGCC26S2gdJwdI9695e_KsAqOgV81JB2yKHeOsF7uhWlduXkMXUQ5pisSCNoNbZX9fRMNvI_mqI3LKSTXlG2KNJNvYhDoJhKAd0dCnMGlQ4Dyw_jmnaFCQy2uMI26ikmcfap-Bl31cQOWKJzNveLK1NVzZPRTBzaXkG08x0__wRlE8kfosrDo">
+
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-2xs text-secondary font-label-eyebrow text-label-eyebrow mb-1 uppercase">
+<span class="material-symbols-outlined text-[15px]">music_note</span>
+<span class="">Seni Suara &amp; Liturgi</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Falsetto Choir (Paduan Suara)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Paduan suara liturgis dan etnik kebanggaan sekolah yang rutin menyabet medali emas di tingkat regional dan nasional, mengasah harmonisasi 4-part vokal.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md">
+<span class="text-secondary font-bold">Juara 1 Pesparawi Sulsel</span>
+<a class="text-primary-container hover:text-secondary flex items-center gap-1" href="#">
+<span class="">Rincian</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 3: Klub Sains & Robotika -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High school science club members in safety goggles and white lab coats assembling an autonomous wheeled robot with microchips and wiring on an experimental track, focused curiosity, bright robotics engineering room with laptop screens showing code." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGubysYr74vX6FY8bJPC-VP_mHNasafNVO0nCDxAZTFmb_Mkz62VadfCAIKtyx8VRwuewP0soD8eeLDDuU50M86ALfKTdcXXwOL5Fa2vkB6gg_jG6sTdX-quIpQwqOD4Cnimf3EbpXr6f2FHSOgxOWmrEHy5ywwEatiTLOBMopvWSM0xn9gBDxXl9P1H2-bDkDgIbpE9QNm1hpwpU3nLaNQpG6dzPPPRAB_ZUjMtW5x4y3qPggkL34RxE2CK363GSRjGn8SEpXVmdlzYI">
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-sm text-primary-container px-2.5 py-1 rounded font-label-eyebrow text-label-eyebrow">
+              Rabu &amp; Sabtu
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-2xs text-secondary font-label-eyebrow text-label-eyebrow mb-1 uppercase">
+<span class="material-symbols-outlined text-[15px]">smart_toy</span>
+<span class="">Inovasi STEM &amp; Olimpiade</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Lab Komputer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pemantapan intensif materi Olimpiade Sains Nasional (OSN) bidang Fisika, dan Kimia.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md">
+<span class="text-secondary font-bold">Finalis OSN Nasional 2024</span>
+<a class="text-primary-container hover:text-secondary flex items-center gap-1" href="#">
+<span class="">Rincian</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 4: Seni Tari Tradisional Toraja -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Young female dancers in authentic Torajan traditional dance attire with beaded Sa'pi' headdress and golden accessories gracefully performing Pa'gellu dance movements on a teak wooden stage, dramatic cinematic lighting highlighting vibrant textile patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaiVErfh2LhrBmP8fOtftnrNaMmGiHVR2d69ugaD3XJemDBiVnEhjqmG2Sx2HKS3nS7fuTiU8dzFkhE7wQfbi5Y85WTa_gCt3vKA0VrlJabpLLNw-FxlXNQlt2EfP8sUl-yWi5OTpNvRJBwkpHPf67evTxJD6LOQBXKg0GLfALIShBiF_qxvExYQO7pF-fpi1bClsNtW-3LQ7e0GVK_ppJPzTqB7JN4f5yKiW0uMFZ3VR_9YON_tHwBvQYkUiARRuu0oPyx2_8kvissLI">
+
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-2xs text-secondary font-label-eyebrow text-label-eyebrow mb-1 uppercase">
+<span class="material-symbols-outlined text-[15px]">theater_comedy</span>
+<span class="">Kearifan Seni Leluhur</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Seni Tari Tradisional Toraja</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pelestarian agung tarian Pa'gellu, Pa'gellu Tua, dan seni musik bambu Pa'pompang, mengajarkan keluwesan gerak, ritme gong, dan filosofi kebersamaan Toraya.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md">
+<span class="text-secondary font-bold">Duta Budaya FLS2N</span>
+<a class="text-primary-container hover:text-secondary flex items-center gap-1" href="#">
+<span class="">Rincian</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 5: Tim Basket & Voli Katma -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Dynamic action shot of a high school student basketball championship, player in deep navy and gold jersey shooting a layup towards the hoop in an energetic indoor arena filled with cheering peers, sharp athletic focus and motion blur." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHD98UT4sBN1JGQCAbeK150-mT03Pi1R7AzkhM3PRgtkYnv2iK_BJMl4429HjwpQdgtEbmqWTVFfWB_RKquF_QQxyIhkfK8a4I3tv0wovpM2PP-MEHEXmZgv6DpmBCUaBnw8K_q_jVevdEM40TquIadcY8K8qk7VRvDEaT-H6AjlTaYyOKZp8jzIE-o2EzAE-q_1t1grwgtIuBgSo2E-q3_q2wMjqysBJWn89rkVAnsE3-gwTVph0Ons9bGaTFr4Wvo1ro3bF67D1hwKk">
+
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-2xs text-secondary font-label-eyebrow text-label-eyebrow mb-1 uppercase">
+<span class="material-symbols-outlined text-[15px]">sports_basketball</span>
+<span class="">Prestasi Atletik</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Tim Basket &amp; Voli smakatma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pembinaan intensif ketahanan fisik, kerja sama tim solid, dan strategi tanding tingkat tinggi dalam kompetisi DBL serta turnamen olahraga antar-sekolah regional.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md">
+<span class="text-secondary font-bold">Champion DBL South Sulawesi</span>
+<a class="text-primary-container hover:text-secondary flex items-center gap-1" href="#">
+<span class="">Rincian</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Card 6: OSIS & MPK -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:-translate-y-1 hover:shadow-md transition-all overflow-hidden flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container"><img class="w-full h-full object-cover" data-alt="Pelantikan dan barisan kepengurusan OSIS &amp; MPK siswa SMAS Katolik Makale berjas almamater hitam dan selempang kepemimpinan di lapangan sekolah" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFuw1-G9XNSmnk-XuoiSgp-ShbYT3ROim3pPL6FUkBSd2Uf9RuRUpzQCF3O4hUeHMMBwH0RYghEuy442iiMFIzUsYQAMU97SeLJH7wBge0a5xyn2w3WX_I4UYLX8-kJsk8EeiCEIh2IlhaGwG5_O7wx6t2xvxacwuxnNdIZy9FMA33eRuO3n_8_UCcK2f5fDyOA7DfxW8UABnhsyF95fR1QQTBx6H3sIwKgDmfexARIBqyjtpx4QR9WrAWNJn0N_k6kJk">
+
+
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-2xs text-secondary font-label-eyebrow text-label-eyebrow mb-1 uppercase">
+<span class="material-symbols-outlined text-[15px]">gavel</span>
+<span class="">Kepemimpinan &amp; Tata Kelola</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">OSIS &amp; MPK (Kepemimpinan)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Organisasi siswa pembina integritas, etika demokrasi kampus, penggerak bakti sosial tahunan, serta pengelola event akbar pentas seni dan ret-ret sekolah.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-md text-label-md">
+<span class="text-secondary font-bold">Parlemen Remaja Terpilih</span>
+<a class="text-primary-container hover:text-secondary flex items-center gap-1" href="#">
+<span class="">Rincian</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Download Panduan & Kontak Pembina Banner (Prestigious Navy Band) -->
+<section class="w-full bg-primary-container text-on-primary py-space-3xl relative overflow-hidden">
+<!-- Decorative geometric background shapes -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-surface-container-highest/5 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Call to Action Text -->
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="inline-flex items-center gap-space-2xs bg-secondary/20 px-space-sm py-1 rounded text-secondary-fixed-dim font-label-eyebrow text-label-eyebrow uppercase">
+<span class="material-symbols-outlined text-[16px]">download_for_offline</span>
+<span class="">Dokumen Panduan Resmi 2025/2026</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary leading-tight">
+            Ingin Mengetahui Jadwal &amp; Silabus Lengkap?
+          </h2>
+<p class="font-body-md text-body-md text-surface-variant max-w-2xl leading-relaxed">
+            Unduh silabus akademik terpadu, rincian beban SKS ekstrakurikuler, panduan seragam, dan kontak langsung para guru pamong serta pembina bakat minat siswa.
+          </p>
+<!-- Contact Mini Info Cards -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-surface-container-high font-body-sm text-body-sm">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px]">person</span>
+<span class="">Koordinator Kesiswaan: <strong>Bpk. Y. Sarira, S.Pd.</strong></span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[18px]">phone_in_talk</span>
+<span class="">Konsultasi: +62 812-4211-9080</span>
+</div>
+</div>
+</div>
+<!-- Download Button & Action Block -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<a class="w-full inline-flex items-center justify-center px-space-lg py-space-md bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container font-label-md text-label-md rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 gap-space-xs text-center" href="#" onclick="downloadNotification(event)">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span class="">Unduh Silabus &amp; Jadwal Lengkap (PDF)</span>
+</a>
+<a class="w-full inline-flex items-center justify-center px-space-lg py-space-sm bg-surface-container-highest/10 hover:bg-surface-container-highest/20 text-on-primary font-label-md text-label-md rounded-xl transition-colors gap-space-xs text-center" data-path="ppdb-(admissions)" href="#">
+<span class="">Daftar Konsultasi Peminatan Akademik</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive notification script -->
+<script>
+    function downloadNotification(e) {
+      e.preventDefault();
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 z-50 bg-primary-container text-on-primary px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 transform transition-all duration-300 translate-y-4 opacity-0';
+      toast.innerHTML = '<span class="material-symbols-outlined text-secondary-fixed-dim">cloud_download</span><div><div class="font-semibold text-sm">Mengunduh Dokumen</div><div class="text-xs text-surface-variant">Silabus & Panduan Kesiswaan SMAS Katolik Makale (PDF, 4.2 MB)</div></div>';
+      document.body.appendChild(toast);
+      
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-4', 'opacity-0');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary"><div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center p-0.5 overflow-hidden shrink-0 shadow-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkfU-xk5MRxeZpD75DU2JPtlPyeIkFjnXd7qnL2wAoqzQRFjJa3-G0lQE436hx7vhUkD80LlXITv_Ug2H06eJgyan54Qr_ij6HuvhUzZHMluNWhh07PHC2RSeS7-qFfqL00dY2XP_R61_-8imxB5T_pLuZ1Uynb_CZ0Sg-wPkKZzz99TtS413qqwfRXu2FwUnSCnfvy-tO7EMXyjkNlE2DnQs3zmMC_LaQeGhgphgZgLQRbvfwJzGbiX2M2F4DhPfiy48" alt="Logo SMAS Katolik Makale" class="w-full h-full object-contain"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight">SMAS Katolik Makale</span><span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-dim uppercase">Tana Toraja</span></div></div><p class="font-body-sm text-body-sm text-surface-variant leading-relaxed">Membentuk Karakter, Menginspirasi Masa Depan. Pendidikan unggul berasas nilai moralitas, kecendekiaan, dan integritas global.</p><div class="flex items-center gap-space-xs pt-space-xs"><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a><a class="w-9 h-9 rounded-lg bg-surface-container-highest/20 hover:bg-secondary-container hover:text-on-secondary-container text-on-primary flex items-center justify-center transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span></a></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Tautan Cepat</h4><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="beranda" href="#">Beranda</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="profil-&amp;-sejarah-sekolah" href="#">Profil Sekolah</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">Kurikulum Akademik</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="akademik-&amp;-kesiswaan" href="#">Ekstrakurikuler</a></li><li class="flex items-center gap-space-2xs"><span class="material-symbols-outlined text-[14px] text-secondary-fixed-dim">chevron_right</span><a class="text-surface-variant hover:text-secondary-fixed-dim transition-colors" data-path="berita-&amp;-acara" href="#">Kalender Pendidikan</a></li></ul></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Hubungi Kami</h4><div class="space-y-space-sm font-body-sm text-body-sm text-surface-variant"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim mt-0.5">location_on</span><span class="">Jl. Musa No. 16 Makale, Tana Toraja, Sulawesi Selatan 91811</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">call</span><span class="">+62 542 860895 / (0423) 22123</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">mail</span><span class="">info@smaskatolikmakale.sch.id</span></div></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Warta Sekolah</h4><p class="font-body-sm text-body-sm text-surface-variant">Dapatkan Info &amp; Warta Sekolah berkala mengenai kegiatan dan prestasi teranyar kami.</p><form class="space-y-space-xs" onsubmit="return false;"><div class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-xs rounded-lg bg-surface-container-highest/20 text-on-primary placeholder:text-surface-dim focus:outline-none focus:ring-2 focus:ring-secondary font-body-sm text-body-sm" placeholder="Alamat surel Anda..." type="email"><button class="w-full py-space-xs px-space-md bg-secondary-container hover:bg-secondary-fixed-dim text-on-secondary-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-space-2xs transition-colors shadow-sm" type="button"><span class="">Kirim Langganan</span><span class="material-symbols-outlined text-[16px]">send</span></button></div></form></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between text-surface-dim font-body-sm text-body-sm gap-space-sm"><p class="">© 2025 SMAS Katolik Makale. Hak Cipta Dilindungi Undang-Undang.</p><div class="flex items-center gap-space-lg"><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Privasi &amp; Legal</a><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Tata Tertib</a><a class="hover:text-secondary-fixed-dim transition-colors" href="#">Peta Situs</a></div></div></div></footer>
+
+
+
+
+
+</body></html>
